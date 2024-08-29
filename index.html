@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div id="div-header-principal">
+            <div id="div-gap">
+                <a href="index.html" id="link-logo"><img id="imagem-logo" src="./Imagens/Logo.png" alt=""></a>
+                <a href="enviar.html" class="link-header">ENVIAR PROJETO</a>
+                <a href="" class="link-header">IMAGENS</a>
+                <a href="Archsemestre.html" class="link-header">ARCH DO SEMESTRO</a>
+                <a href="" class="link-header">SERVIÇOS</a>
+            </div>
+            <div id="div-gap-2">
+                <input id="input-pesquisa" type="text" placeholder="Nome do arquiteto ou projeto...">
+                <button id="btn-lupa"><img id="imagem-lupa" src="./imagens/Lupa.png" alt=""></button>
+                <div class="profile-container">
+                    <div id="imagem-perfil">
+                        <img src="./Imagens/Gui.png" alt="Profile Picture" id="profile-foto">
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="perfil.html">Meu Perfil</a>
+                        <a href="">Sair</a>
+                    </div>
+                </div>
+                <img id="imagem-menu" src="./Imagens/Menu.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <div id="nav-bar">
+
+    </div>
+    <!-- <button id="fazer-login">FAZER LOGIN</button> -->
+    <div id="container">
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <div class="slide">
+                    <img src="./Imagens/img-home.jpg" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="./Imagens/img-home2.jpg" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="./Imagens/img-home3.jpg" alt="Image 3">
+                </div>
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <div id="conteudo-principal">
+
+            <p id="titulo-principal">QUAL PROJETO VOCÊ QUER SE <strong>INSPIRAR</strong> HOJE?</p>    
+
+            <div id="filtro-imagem">
+                <div class="div-img-filtro">
+                    <img src="./Imagens/Icone/chamine-de-casa.png" alt="" class="img-filtro">
+                    <p>Residêncial</p>
+                </div>
+                <div class="div-img-filtro">
+                    <img src="./Imagens/Icone/chapeu-de-graduacao.png" alt="" class="img-filtro">
+                    <p>Espaço Terciário</p>
+                </div>
+                <div class="div-img-filtro">
+                        <img src="./Imagens/Icone/onibus.png" alt="" class="img-filtro">
+                    <p>Escolar</p>
+                </div>
+                <div class="div-img-filtro">
+                    <img src="./Imagens/Icone/farmacia.png" alt="" class="img-filtro">
+                    <p>Hospitalar</p>
+                </div>
+                <div class="div-img-filtro">
+                    <img src="./Imagens/Icone/carrinho-de-compras.png" alt="" class="img-filtro">
+                    <p>Comercial</p>
+                </div>
+                <div class="div-img-filtro">
+                    <img src="./Imagens/Icone/ponto-de-referencia-alternativo.png" class="img-filtro">
+                    <p>Urbanismo</p>
+                </div>
+                <div class="div-img-filtro">
+                    <img src="./Imagens/Icone/hotel.png" alt="" class="img-filtro">
+                    <p>Hotelaria</p>
+                </div>
+            </div>
+
+            <div id="div-filtro">
+                <h4>Filtre sua pesquisa</h4>
+                <div id="div-select">
+                    <select name="regiao" id="regiao">
+                        <option value="" disabled selected>Qual a região?</option>
+                        <option value="">Todos</option>
+                        <option value="">Bahia</option>
+                    </select>
+                    <select name="faculdade" id="faculdade">
+                        <option value="" disabled selected>Qual a faculdade?</option>
+                        <option value="">Todos</option>
+                        <option value="">Anhanguera</option>
+                    </select>
+                    <select name="estilo" id="estilo">
+                        <option value="" disabled selected>Qual o estilo?</option>
+                        <option value="">Todos</option>
+                        <option value="">Bahia</option>
+                    </select>
+                    <button>></button>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="imagem-conteudo-principal">
+                    <div class="nome-projeto"><h2>USB - CARLOS MARTINELLI</h2></div>
+                    <img src="./Imagens/ATELIER HOSPITALAR.png" alt="">
+                    <div class="imagem-info">
+                        <div>
+                            <p>Local: </p>
+                            <p class="p-cor">Itabuna-Bahia-Brasil</p>
+                        </div>
+                        <div>
+                            <p>Área: </p>
+                            <p class="p-cor">550m²</p>
+                            <p>Ano: </p>
+                            <p class="p-cor">2024</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="paragrafo-conteudo-principal">
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                        Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
+                        College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going
+                        through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from
+                        sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written 
+                        in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of 
+                        Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                </div>
+            </div>
+            <div class="post">
+                <div class="imagem-conteudo-principal">
+                    <div class="nome-projeto"><h2>CASA FUTURE</h2></div>
+                    <img src="./Imagens/img-post.jpg" alt="">
+                    <div class="imagem-info">
+                        <div>
+                            <p>Local: </p>
+                            <p class="p-cor">Itabuna-Bahia-Brasil</p>
+                        </div>
+                        <div>
+                            <p>Área: </p>
+                            <p class="p-cor">550m²</p>
+                            <p>Ano: </p>
+                            <p class="p-cor">2024</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="paragrafo-conteudo-principal">
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                        Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
+                        College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going
+                        through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from
+                        sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written 
+                        in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of 
+                        Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="container-footer">
+            <div id="div-logo-footer">
+                <img src="/Imagens/ARCH.png" alt="">
+            </div>
+            <div id="div-contato-footer">
+                <div id="div-sobre-footer">
+                    <a href=""><strong>SOBRE</strong></a>
+                    <a href=""><strong>ENTRE EM CONTATO</strong></a>
+                    <a href=""><strong>QUEM SOMOS NÓS?</strong></a>
+                </div>
+                <div id="div-direitos-footer">
+                    <p>© Todos os direitos reservados. ArchStudance, partedas plataformas asdasasAG 2024</p>
+                    <p>ISSN 245561646434</p>
+                    <p>Todas as imagens são © de cada aluno ou professor mencionado</p>
+                </div>
+            </div>
+            <div id="div-redes-footer">
+
+            </div>
+        </div>
+    </footer>
+    <script>
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            const slider = document.getElementById('slider');
+            const slides = document.querySelectorAll('.slide');
+            if (index >= slides.length) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = slides.length - 1;
+            } else {
+                currentSlide = index;
+            }
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        setInterval(nextSlide, 9000); // Change image every 3 seconds
+
+        document.addEventListener("DOMContentLoaded", function() {
+    const divBotao = document.getElementById("imagem-menu");
+    const container = document.querySelector("#nav-bar");
+    const header = document.querySelector("#div-gap-2");
+
+    function moverBotao() {
+        if (window.innerWidth <= 768) {
+            // Move a div do botão para o container se estiver em um dispositivo móvel
+            if (!container.contains(divBotao)) {
+                container.appendChild(divBotao);
+                divBotao.style.display = "block"; // Exibe a div no container
+            }
+        } else {
+            // Retorna a div do botão para o header se a tela for maior
+            if (!header.contains(divBotao)) {
+                header.appendChild(divBotao);
+                divBotao.style.display = "flex"; // Exibe a div no header
+            }
+        }
+    }
+
+    // Executa ao carregar a página
+    moverBotao();
+
+    // Adiciona um listener para a mudança de tamanho da tela
+    window.addEventListener("resize", moverBotao);
+});
+    </script>
+</body>
+</html>

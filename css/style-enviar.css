@@ -1,0 +1,581 @@
+*{
+  margin: 0px;
+}
+
+@font-face {
+  font-family: principal;
+  src: url(../Fonte/Inter/InterVariable-Italic.ttf)
+}
+
+body{
+  font-family: principal;
+  
+}
+
+header{
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
+.profile-container-header {
+  width: 10%;
+  position: relative;
+  display: inline-block;
+}
+
+#div-header-principal{
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+  gap: 5%;
+}
+
+#div-gap{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 18px;
+}
+
+#imagem-logo{
+  width: 60%;
+}
+
+#div-gap-2{
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#div-header-principal a{
+  text-decoration: none;
+  color: rgb(106, 105, 105) ;
+}
+
+#div-header-principal a:hover{
+  color: #024A8C ;
+}
+
+#imagem-lupa{
+  width: 30%;
+}
+
+#btn-lupa{
+  width:15%;
+  height: 30px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+#btn-lupa:hover{
+  background-color:#3d96e9;
+  border: 1px solid white;
+}
+#input-pesquisa{
+  width: 45%;
+  height: 25px;
+  border-radius: 5px;
+  border: 2px solid grey;
+}
+
+#link-logo{
+width: 30%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#imagem-perfil{
+  width: 100%;
+  height: 7vh;
+  border-radius: 50%;
+  border: 3px solid #024A8C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#imagem-perfil img{
+width: 100%;
+}
+
+#imagem-menu{
+  width: 9%;
+  margin-right: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 150px;
+  right: 0;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.profile-container-header:hover .dropdown-content {
+  display: block;
+}
+
+
+#conteudo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+#div-imagem{
+    width: 35%;
+    height: 110vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+#div-imagem img{
+    width: 80%;
+}
+
+#div-informacao{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-container {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+    margin-top: 2%;
+  }
+
+  .profile-container button{
+    background-color: white;
+    border: 1px dashed #065fb1;
+    border-radius: 5px;
+    width: 20%;
+    height: 6vh;
+    font-size: 15px;
+    margin-bottom: 2%;
+  }
+
+  .profile-container button:hover{
+    background-color: #065fb1;
+    color: white;
+  }
+  
+  .profile-picture {
+    width: 100%;
+    height: 30vh;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #065fb1;
+  }
+  
+  .profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.div-primeiros-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 9vh;
+    width: 100%;
+}  
+
+.div-primeiros-input div{
+    display: flex;
+    flex-direction: row;
+}
+
+.div-primeiros-input input{
+    height: 5vh;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.div-primeiros-input select{
+    height: 5vh;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.div-titulo{
+    display: flex;
+    flex-direction: row;
+    gap: 32%;
+    font-size: 15px;
+}
+
+.div-input{
+    gap: 5%;
+}
+
+#div-para{
+    display: flex;
+    flex-direction: row;
+    gap: 42%;
+    font-size: 15px;
+}
+
+#div-para-3{
+    display: flex;
+    flex-direction: row;
+    gap: 28%;
+    font-size: 15px;
+}
+
+#area{
+    margin-left: 2% ;
+}
+
+#select-faculdade{
+    width: 100%;
+}
+
+#introducao{
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+    height: 25vh;
+}
+textarea{
+    margin-bottom: 2%;
+}
+
+.container {
+    font-size: 15px;
+    width: 100%;
+  }
+  
+  input[type="file"] {
+    margin-bottom: 10px;
+  }
+  #pdfPreview {
+    margin-top: 20px;
+    margin-bottom: 2%;
+    width: 100%;
+    height: 30vh;
+    border: 1px solid #ccc;
+  }
+
+  .container input{
+     width: 20%;
+     border: 1px solid #024A8C;
+  }
+
+  #customButton{
+    width: 20%;
+    height: 5vh;
+    border: 1px dashed #024A8C;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 5%;
+
+  }
+
+  #customButton:hover{
+    background-color: #065fb1;
+    color: white;
+  }
+
+  #div-btn-escolher{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #articleForm {
+    margin-top: 20px;
+  }
+  
+  #preview {
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  #preview h2{
+    color: #065fb1;
+  }
+
+  #div-artigo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+  }
+
+  #div-info-artigo{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #chooseButton{
+    width: 20%;
+    height: 5vh;
+    background-color: white;
+    border: 1px dashed #065fb1;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  #chooseButton:hover{
+    background-color: #065fb1;
+    color: white;
+  }
+
+  #saveButton{
+    width: 10%;
+    height: 5vh;
+    background-color: white;
+    border: 1px dashed green;
+    border-radius: 5px;
+  }
+
+  #saveButton:hover{
+    background-color: green;
+    color: white;
+  }
+
+  #addParagraphButton{
+    width: 45%;
+    height: 5vh;
+    background-color: white;
+    border: 1px dashed #065fb1;
+    border-radius: 5px;
+    margin-right: 9%;
+  }
+  #addImageButton{
+    width: 45%;
+    height: 5vh;
+    background-color: white;
+    border: 1px dashed #065fb1;
+    border-radius: 5px;
+  }
+
+  #options{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: 2%;
+  }
+
+  #articleForm{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #btn-enviar{
+    width: 10%;
+    height: 5vh;
+    background-color: white;
+    border: 1px dashed black;
+    border-radius: 5px;
+  }
+
+  #btn-enviar:hover{
+    background-color: black;
+    color: white;
+  }
+
+  #preview{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #preview img{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border-radius: 15px;
+  }
+
+
+  .formatar{
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+}
+
+.p-cor{
+    color: #3d96e9;
+}
+
+#img-feed{
+    border-radius: 30px;
+    width: 100%;
+    height: 50vh; 
+}
+
+#div-feed{
+    width: 100%;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    padding-left: 2%;
+}
+
+hr{
+    width: 80%;
+    color: #065fb1;
+    margin-bottom: 2%;
+}
+
+.div-hr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p-introducao{
+    padding: 1%;
+   
+}
+
+.content-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  width: 80%;
+}
+
+.content-item textarea{
+  width: 60%;
+  margin-left: 10%;
+}
+
+.delete-btn{
+  background-image: url(/Imagens/botao-excluir.png);
+  height: 6vh;
+  background-size: 50%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  width: 10%;
+}
+
+.div-input-artigo{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 14%;
+}
+.img-input{
+  margin-left: 24%;
+}
+
+footer{
+  width: 100%;
+}
+
+#div-logo-footer img{
+  width: 35%;
+}
+
+#container-footer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 30vh;
+  background: rgb(5,97,183);
+  background: linear-gradient(90deg, rgba(5,97,183,1) 15%, rgba(3,48,145,1) 72%); ;
+}
+
+#div-logo-footer{
+
+  width: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#div-contato-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  width: 35%;
+  gap: 8%;
+}
+
+#div-sobre-footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  width: 100%;
+  font-size: 15px;
+}
+
+#div-sobre-footer a{
+  color: white;
+}
+
+#div-direitos-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

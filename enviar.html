@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style-enviar.css">
+</head>
+<body>
+    <header>
+        <div id="div-header-principal">
+            <div id="div-gap">
+                <a href="index.html" id="link-logo"><img id="imagem-logo" src="./Imagens/Logo.png" alt=""></a>
+                <a href="enviar.html">ENVIAR PROJETO</a>
+                <a href="">IMAGENS</a>
+                <a href="Archsemestre.html">ARCH DO SEMESTRO</a>
+                <a href="">SERVIÇOS</a>
+            </div>
+            <div id="div-gap-2">
+                <input id="input-pesquisa" type="text" placeholder="Nome do arquiteto ou projeto...">
+                <button id="btn-lupa"><img id="imagem-lupa" src="./imagens/Lupa.png" alt=""></button>
+                <div class="profile-container-header">
+                    <div id="imagem-perfil">
+                        <img src="./Imagens/Gui.png" alt="Profile Picture">
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="perfil.html">Meu Perfil</a>
+                        <a href="">Sair</a>
+                    </div>
+                </div>
+                <img id="imagem-menu" src="./Imagens/Menu.png" alt="">
+            </div>
+        </div>
+    </header>
+    <form id="mainForm" action="javascript:void(0);">
+        <div id="conteudo">
+            <div id="container">
+                <div id="div-imagem">
+                    <img src="/Imagens/IMAGE_.png" alt="">
+                </div>
+                <div id="div-informacao">
+                    <div>
+                        <h1>Conte um pouco mais sobre seu projeto:</h1>
+                        <div class="profile-container">
+                            <input type="file" id="profile-upload" name="foto_perfil" accept="image/*" style="display: none;" required>
+                            <div class="profile-picture" id="profile-picture">
+                                <img src="" id="profile-img" alt="">
+                            </div>
+                            <button type="button" id="upload-button">+ CAPA</button>
+                        </div>
+                    </div>
+                    <div class="div-primeiros-input">
+                        <div class="div-titulo">
+                            <p>Nome do projeto:</p>
+                            <p>Categoria do projeto:</p>
+                        </div>
+                        <div class="div-input"> 
+                            <input type="text" id="nome-projeto">
+                            <select name="categoria-projeto" id="categoria-projeto">
+                                <option value="R">Residencial</option>
+                                <option value="ET">Espaço Terciário</option>
+                                <option value="E">Escolar</option>
+                                <option value="H">Hospitalar</option>
+                                <option value="C">Comercial</option>
+                                <option value="U">Urbanismo</option>
+                                <option value="Hotelaria">Hotelaria</option>
+                                <option value="O">Outro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="div-primeiros-input">
+                        <div id="div-para">
+                            <p>Docente:</p>
+                            <p>Alunos:</p>
+                        </div>
+                        <div class="div-input"> 
+                            <input type="text" id="docente">
+                            <input type="text" id="alunos">
+                        </div>
+                    </div>
+                    <div class="div-primeiros-input">
+                        <div id="div-para-3">
+                            <p>Local:</p>
+                            <p>Ano:</p>
+                            <p id="area">Àrea(m²):</p>
+                        </div>
+                        <div class="div-input"> 
+                            <input type="text" id="local">
+                            <input type="number" id="ano">
+                            <input type="number" placeholder="10" id="area">
+                        </div>
+                    </div>
+                    <div class="div-primeiros-input">
+                        <div id="div-para-3">
+                            <p>Faculdade:</p>
+                        </div>
+                        <div class="div-input"> 
+                            <select name="faculdade" id="select-faculdade">
+                                <option value="0"></option>
+                                <option value="1">Anhanguera</option>
+                            </select> 
+                        </div>
+                    </div>
+                    <div class="div-input">
+                        <div id="div-para-3">
+                            <p>Descreva o início de seu projeto:</p>
+                        </div>
+                        <div class="div-input"> 
+                            <textarea name="introducao" id="introducao"></textarea>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <p>Envie seu arquivo:</p>
+                        <div id="pdfPreview"></div>
+                        <input type="file" id="pdfFile" accept=".pdf" style="display: none;">
+                        <div id="div-btn-escolher">
+                            <button type="button" id="customButton">+ PDF Técnico</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="div-hr">
+        <hr>
+    </div>
+       
+    <div id="div-artigo">
+        <div id="div-info-artigo">
+            <h2>Agora vamos estruturar o seu artigo</h2>
+            <button id="chooseButton">Escolher Conteúdo</button>
+            <form id="articleForm">
+            <!-- Os parágrafos e imagens serão adicionados aqui -->
+            </form>
+            <div id="options" style="display: none;">
+                <button id="addParagraphButton">Adicionar Parágrafo</button>
+                <button id="addImageButton">Adicionar Imagem</button>
+            </div>
+            <div id="dynamicContent"></div>
+            <button id="saveButton">Salvar</button>
+            <br>
+            <button type="submit" id="btn-enviar">Enviar</button>
+            <br>
+            <div class="div-hr">
+                <hr>
+            </div>  
+            <br>
+            <p>Pré visualização:</p>
+            <div id="preview"></div>
+        </div>
+    </div>
+    <footer>
+        <div id="container-footer">
+            <div id="div-logo-footer">
+                <img src="/Imagens/ARCH.png" alt="">
+            </div>
+            <div id="div-contato-footer">
+                <div id="div-sobre-footer">
+                    <a href=""><strong>SOBRE</strong></a>
+                    <a href=""><strong>ENTRE EM CONTATO</strong></a>
+                    <a href=""><strong>QUEM SOMOS NÓS?</strong></a>
+                </div>
+                <div id="div-direitos-footer">
+                    <p>© Todos os direitos reservados. ArchStudance, partedas plataformas asdasasAG 2024</p>
+                    <p>ISSN 245561646434</p>
+                    <p>Todas as imagens são © de cada aluno ou professor mencionado</p>
+                </div>
+            </div>
+            <div id="div-redes-footer">
+
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('upload-button').addEventListener('click', function() {
+            document.getElementById('profile-upload').click();
+        });
+
+        document.getElementById('profile-upload').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('profile-img').src = e.target.result;
+                    document.getElementById('profile-img').style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        document.getElementById('customButton').addEventListener('click', function() {
+            document.getElementById('pdfFile').click();
+        });
+
+        document.getElementById('pdfFile').addEventListener('change', function() {
+            var file = this.files[0];
+
+            if (file.type !== 'application/pdf') {
+                alert('Por favor, selecione um arquivo PDF.');
+                return;
+            }
+
+            var fileReader = new FileReader();
+            fileReader.onload = function() {
+                var pdfData = fileReader.result;
+
+                var pdfPreview = document.getElementById('pdfPreview');
+                pdfPreview.innerHTML = `<embed src="${pdfData}" width="100%" height="100%" type="application/pdf">`;
+            };
+            fileReader.readAsDataURL(file);
+        });        
+
+        document.getElementById('chooseButton').addEventListener('click', function() {
+            var options = document.getElementById('options');
+            options.style.display = options.style.display === 'none' ? 'block' : 'none';
+        });
+
+        document.getElementById('addParagraphButton').addEventListener('click', function() {
+            var form = document.getElementById('articleForm');
+            var div = document.createElement('div');
+            div.className = 'content-item';
+            
+            var textarea = document.createElement('textarea');
+            textarea.placeholder = 'Digite seu parágrafo aqui...';
+            textarea.rows = 10;
+            textarea.cols = 70;
+            div.appendChild(textarea);
+            
+            var deleteButton = document.createElement('div');
+            deleteButton.className = 'delete-btn';
+            deleteButton.addEventListener('click', function() {
+                form.removeChild(div);
+            });
+            div.appendChild(deleteButton);
+
+            form.appendChild(div);
+            form.appendChild(document.createElement('br'));
+        });
+
+        document.getElementById('addImageButton').addEventListener('click', function() {
+            var form = document.getElementById('articleForm');
+            var div = document.createElement('div');
+            div.className = 'content-item';
+
+            var input = document.createElement('input');
+            input.type = 'file';
+            div.className = 'div-input-artigo';
+            input.className = 'img-input';
+            input.accept = 'image/*';
+            div.appendChild(input);
+
+            var deleteButton = document.createElement('div');
+            deleteButton.className = 'delete-btn';
+            deleteButton.addEventListener('click', function() {
+                form.removeChild(div);
+            });
+            div.appendChild(deleteButton);
+
+            form.appendChild(div);
+            form.appendChild(document.createElement('br'));
+        });
+
+        document.getElementById('saveButton').addEventListener('click', function() {
+            var preview = document.getElementById('preview');
+            preview.innerHTML = '';  // Limpar a pré-visualização anterior
+
+            var profileUpload = document.getElementById('profile-upload').files[0];
+            var introducao = document.getElementById('introducao').value;
+            var nomeProjeto = document.getElementById('nome-projeto').value;
+            var categoriaProjeto = document.getElementById('categoria-projeto').value;
+            var docente = document.getElementById('docente').value;
+            var alunos = document.getElementById('alunos').value;
+            var local = document.getElementById('local').value;
+            var ano = document.getElementById('ano').value;
+            var area = document.getElementById('area').value;
+            var faculdade = document.getElementById('select-faculdade').value;
+
+            var titulo = `<h2>${nomeProjeto}</h2>`
+
+            preview.innerHTML += titulo
+
+            if (profileUpload) {
+                var img = document.createElement('img');
+                img.id= 'img-feed';
+                img.src = URL.createObjectURL(profileUpload);
+                img.style.maxWidth = '100%';
+                preview.appendChild(img);
+            }
+
+            var infoHTML = `
+                <p id="p-introducao"> ${introducao}</p>
+                <div id= "div-feed">
+                    <div class="formatar">
+                        <p>Docente:</p>
+                        <p class="p-cor">${docente}</p>
+                    </div>
+                    <div class="formatar">
+                        <p>Alunos:</p>
+                        <p class="p-cor">${alunos}</p>
+                    </div>
+                    <div class="formatar">
+                        <p>categoria:</p>
+                        <p class="p-cor">${categoriaProjeto}</p>
+                    </div>
+                    <div class="formatar">
+                        <p>UNIVERSIDADE:</p>
+                        <p class="p-cor">${faculdade}</p>
+                    </div>
+                    <div class="formatar">
+                        <p>Local:</p>
+                        <p class="p-cor">${local}</p>
+                    </div>
+                    <div class="formatar">
+                        <p>Ano:</p>
+                        <p class="p-cor">${ano}</p>
+                    </div>
+                    <br>
+                    <div class="div-hr">
+                        <hr>
+                    </div>
+                </div>
+            `;
+
+            preview.innerHTML += infoHTML;
+
+            var dynamicContent = document.getElementById('articleForm').elements;
+            for (var i = 0; i < dynamicContent.length; i++) {
+                var element = dynamicContent[i];
+                if (element.tagName === 'TEXTAREA') {
+                    var p = document.createElement('p');
+                    p.textContent = element.value;
+                    preview.appendChild(p);
+                } else if (element.type === 'file' && element.files.length > 0) {
+                    var img = document.createElement('img');
+                    img.src = URL.createObjectURL(element.files[0]);
+                    img.style.maxWidth = '100%';
+                    preview.appendChild(img);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

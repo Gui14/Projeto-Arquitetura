@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-login.css">
+    <title>Login</title>
+</head>
+<body>
+    <img src="./Imagens/Logo.png" alt="" id="logo-body">
+    <div id="container">
+        <h1>Login</h1>
+        <form id="login-form">
+            <div id="info-login">
+                <p>Email:</p>
+                <input type="email" id="email" placeholder="Email" required>
+                <p>Senha:</p>
+                <input type="password" id="senha" placeholder="Senha" required>
+            </div>
+            <div id="div-esqueci">
+                <a href="">Esqueci a senha</a>
+            </div>
+            <div id="div-botao">
+                <button id="btn-logar" type="submit">Logar</button>
+            </div>    
+        </form>
+        <hr>
+        <a href="cadastro.html"><button id="btn-cadastrar">Cadastrar</button></a>
+        <div id="response"></div>
+    </div>
+    <script src="./js/script-login.js"></script>
+</body>
+</html>
