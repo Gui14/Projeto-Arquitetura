@@ -503,13 +503,39 @@ footer{
         justify-content: center;
         align-items: center;
         position: fixed;
-        bottom: 2%;
-        border: 1px solid;
+        bottom: 0%;
         background-color: rgb(237, 237, 237);
+        gap: 4%;
+        height: 20vw;
+    }
+
+    #imagem-menu{
+        margin-right: 0;
+    }
+
+    #nav-bar img{
+        width: 10%;
+    }
+
+    #nav-bar button{
+        color: white;
+        border-radius: 5px;
+        background: linear-gradient(90deg, rgba(5,97,183,1) 15%, rgba(3,48,145,1) 72%); ;
+        width: 100%;
+        height: 15vw;
+        border: 5px solid white;
+    }
+
+    #nav-bar div{
+        width: 60%;
+        display: flex;
+        justify-content:center;
+        align-items: baseline;
+        height: 20vw;
     }
 
     #titulo-principal{
-        font-size:3.8vw;
+        font-size:4vw;
     }
 
     #filtro-imagem{
@@ -530,7 +556,7 @@ footer{
     }
     
     #filtro-imagem p{
-        font-size: 2.4vw;
+        font-size: 3vw;
         align-items: center;
     }
     
@@ -551,17 +577,63 @@ footer{
     }
 
     select{
-        font-size: 1vh;
+        font-size: 1.2vh;
     }
 
     #div-select button{
-        height: 5vw;
+        height: 8vw;
         font-size: 1vh;
+        width: 15%;
     }
     p{
-        font-size: 1vh;
+        font-size: 1.6vh;
     }
     a{
         font-size: 1vh;
+    }
+
+    #conteudo-principal{
+        width: 80%;
+    }
+    hr{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    #div-sobre-footer a{
+        font-size: 1vh;
+    }
+
+    #div-direitos-footer p{
+        font-size: 1vh;
+        margin-bottom: 1%;
+        margin-top: 2%;
+    }
+
+    #div-redes-footer{
+        width: 0%;
+    }
+
+    #div-contato-footer{
+        width: 70%;
+        padding-right: 3%;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    #container-footer{
+        height: auto;
+        padding-bottom: 15%;
+        padding-top: 5%;
+    }
+
+    #div-logo-footer{
+        width: 50%;
+    }
+
+    #div-logo-footer img{
+        width: 50%;
     }
   }
