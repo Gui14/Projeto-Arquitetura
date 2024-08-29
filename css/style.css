@@ -453,14 +453,44 @@ footer{
 
     #div-gap-2{
         width: 90%;
+        padding-top: 3%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btn-lupa{
+        margin-right: 0;
+    }
+
+    #input-pesquisa{
+        width: 70%;
     }
 
     .profile-container{
+        height: 10vh;
+        width:  20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imagem-perfil{
+        width: 70%;
         height: auto;
-        width: auto;
     }
 
     #profile-foto{
-        width: 30%;
+        width: 100%;
+    }
+
+    #nav-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 2%;
+        border: 1px solid;
+        background-color: rgb(237, 237, 237);
     }
   }
