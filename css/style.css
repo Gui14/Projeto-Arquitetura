@@ -187,21 +187,31 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1%;
     width: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
     color: #075fb2;
 }
 
+.div-filtro-1{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+
+#div-filtro-1{
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+}
+
 #filtro-imagem p{
-    font-size: 15px;
+    font-size: 1vw;
     align-items: center;
 }
 
-#filtro-imagem div{
-    width: 20%;
-}
+
 
 .div-img-filtro{
     width: 100%;
@@ -213,6 +223,10 @@ header{
 
 .img-filtro{
     width: 50%;
+}
+
+#img-filtro{
+    width: 73%;
 }
  
 #container{
@@ -492,5 +506,62 @@ footer{
         bottom: 2%;
         border: 1px solid;
         background-color: rgb(237, 237, 237);
+    }
+
+    #titulo-principal{
+        font-size:3.8vw;
+    }
+
+    #filtro-imagem{
+        flex-direction: column;
+    }
+
+    .div-filtro-1{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+    }
+    
+    #div-filtro-1{
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+    }
+    
+    #filtro-imagem p{
+        font-size: 2.4vw;
+        align-items: center;
+    }
+    
+    .div-img-filtro{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-filtro{
+        width: 50%;
+    }
+    
+    #img-filtro{
+        width: 52%;
+    }
+
+    select{
+        font-size: 1vh;
+    }
+
+    #div-select button{
+        height: 5vw;
+        font-size: 1vh;
+    }
+    p{
+        font-size: 1vh;
+    }
+    a{
+        font-size: 1vh;
     }
   }
